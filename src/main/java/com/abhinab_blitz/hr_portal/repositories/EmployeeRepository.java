@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.abhinab_blitz.hr_portal.enums.EmployeeDepartment;
 import com.abhinab_blitz.hr_portal.models.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, UUID> {
@@ -12,4 +14,5 @@ public interface EmployeeRepository extends JpaRepository<Employee, UUID> {
     Employee findByPhoneNumber(String phoneNumber);
     Employee findByFirstName(String firstName);
     List<Employee> findByReportingManagerId(UUID reportingManagerId);
+    List<Employee> findByDepartment(EmployeeDepartment department);
 }
