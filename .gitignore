@@ -1,0 +1,65 @@
+# ----- Java / Spring Boot / Maven -----
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Package directories
+/target/
+/build/
+
+# Maven specific
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/pom.xml.next
+/release.properties
+/dependency-reduced-pom.xml
+/buildNumber.properties
+/.mvn/timing.properties
+
+# Generated sources
+generated-sources/
+generated-test-sources/
+
+# Test output
+/target/test-classes/
+
+# IDEs and editors
+/.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.classpath
+.project
+/.settings/
+.vscode/
+
+# macOS
+.DS_Store
+._*
+*~
+.*~
+
+# Windows
+Thumbs.db
+
+# Gradle (if present)
+/.gradle/
+
+# Node
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+credentials.yml.enc
+
+# Misc
+*.jar
+*.war
+*.ear
